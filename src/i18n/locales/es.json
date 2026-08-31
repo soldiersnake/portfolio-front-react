@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "cta": "Hablemos"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Mariano Macías",
+    "role": "Full Stack Developer — React, TypeScript, Node.js & NestJS",
+    "tagline": "Construyo interfaces sólidas y APIs escalables para banca, seguros y startups. Actualmente desarrollando el CMS de Vetland para el sector insurtech.",
+    "ctaPrimary": "Ver proyectos",
+    "ctaSecondary": "Contactarme",
+    "available": "Disponible para nuevas oportunidades remotas"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "paragraph1": "Soy Desarrollador Full Stack especializado en el ecosistema JavaScript/TypeScript (React, Node.js, Express, NestJS), con formación técnica universitaria en Sistemas. Vivo en Valencia, España, y trabajo en remoto para clientes de banca digital, seguros e insurtech.",
+    "paragraph2": "Además de programar, soy docente: hace más de 3 años formo desarrolladores en el stack MERN, mentorizando a más de 500 estudiantes. Fuera del código, soy un apasionado de la música — algo que se nota en mi forma de encarar el trabajo en equipo: escuchar, encontrar el ritmo del proyecto y aportar mi parte con precisión.",
+    "highlightsTitle": "Algunos números",
+    "highlights": {
+      "experience": "años de experiencia profesional",
+      "mentored": "estudiantes mentorizados",
+      "projects": "proyectos en producción",
+      "languages": "idiomas de trabajo (ES nativo, EN B2)"
+    },
+    "cvTitle": "Currículum",
+    "cvEn": "Descargar CV (Inglés)",
+    "cvEs": "Descargar CV (Español)"
+  },
+  "skills": {
+    "title": "Habilidades técnicas",
+    "subtitle": "Stack principal y herramientas con las que trabajo día a día."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Una selección de proyectos propios y de clientes. Hacé clic en cualquiera para abrirlo en una pestaña nueva.",
+    "viewLive": "Ver sitio en vivo",
+    "viewRepo": "Ver código",
+    "previewUnavailable": "Este sitio no permite mostrarse dentro de otra página por motivos de seguridad. Hacé clic para verlo directamente.",
+    "openSite": "Abrir proyecto",
+    "categories": {
+      "all": "Todos",
+      "react": "React",
+      "html-css": "HTML / CSS",
+      "client": "Trabajo para cliente"
+    },
+    "comingSoon": "Más proyectos próximamente — esta sección se sigue ampliando."
+  },
+  "experience": {
+    "title": "Experiencia laboral",
+    "subtitle": "Mi recorrido profesional, del más reciente al más antiguo.",
+    "present": "Actualidad"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "¿Buscás sumar a alguien a tu equipo o tenés un proyecto en mente? Escribime y te respondo a la brevedad.",
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "email": "Email",
+    "emailPlaceholder": "tu@email.com",
+    "subject": "Asunto",
+    "subjectPlaceholder": "Ej: Oportunidad laboral / Consulta de proyecto",
+    "message": "Mensaje",
+    "messagePlaceholder": "Contame en qué puedo ayudarte...",
+    "submit": "Enviar mensaje",
+    "submitting": "Enviando...",
+    "successTitle": "¡Mensaje enviado!",
+    "successBody": "Gracias por escribirme. Te va a llegar un email de confirmación y te responderé lo antes posible.",
+    "errorTitle": "Algo salió mal",
+    "errorBody": "No pude enviar tu mensaje. Probá de nuevo en unos minutos o escribime directamente por email.",
+    "sendAnother": "Enviar otro mensaje",
+    "directEmail": "También podés escribirme directamente a",
+    "validation": {
+      "nameRequired": "Ingresá tu nombre",
+      "emailInvalid": "Ingresá un email válido",
+      "subjectRequired": "Ingresá un asunto",
+      "messageRequired": "Escribí un mensaje",
+      "messageMin": "El mensaje debe tener al menos 10 caracteres"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Hecho con React, TypeScript, Tailwind y NestJS."
+  }
+}

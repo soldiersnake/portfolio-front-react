@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "cta": "Let's talk"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Mariano Macías",
+    "role": "Full Stack Developer — React, TypeScript, Node.js & NestJS",
+    "tagline": "I build reliable interfaces and scalable APIs for banking, insurance, and startups. Currently developing the Vetland CMS for the insurtech sector.",
+    "ctaPrimary": "View projects",
+    "ctaSecondary": "Get in touch",
+    "available": "Open to new remote opportunities"
+  },
+  "about": {
+    "title": "About me",
+    "paragraph1": "I'm a Full Stack Developer specialized in the JavaScript/TypeScript ecosystem (React, Node.js, Express, NestJS), with a formal university technical education in Systems. I live in Valencia, Spain, and work remotely for clients in digital banking, insurance, and insurtech.",
+    "paragraph2": "Besides coding, I teach: for 3+ years I've been training developers in the MERN stack, mentoring 500+ students. Outside of code, I'm a passionate musician — something that shows in how I approach teamwork: listening, finding the project's rhythm, and delivering my part with precision.",
+    "highlightsTitle": "A few numbers",
+    "highlights": {
+      "experience": "years of professional experience",
+      "mentored": "students mentored",
+      "projects": "projects in production",
+      "languages": "working languages (Native Spanish, English B2)"
+    },
+    "cvTitle": "Resume",
+    "cvEn": "Download CV (English)",
+    "cvEs": "Download CV (Spanish)"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Core stack and tools I work with day to day."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of personal and client projects. Click any card to open it in a new tab.",
+    "viewLive": "View live site",
+    "viewRepo": "View code",
+    "previewUnavailable": "This site can't be embedded here for security reasons. Click to open it directly.",
+    "openSite": "Open project",
+    "categories": {
+      "all": "All",
+      "react": "React",
+      "html-css": "HTML / CSS",
+      "client": "Client work"
+    },
+    "comingSoon": "More projects coming soon — this section keeps growing."
+  },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "My professional journey, most recent first.",
+    "present": "Present"
+  },
+  "contact": {
+    "title": "Let's talk",
+    "subtitle": "Looking to add someone to your team, or have a project in mind? Send me a message and I'll get back to you shortly.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "subject": "Subject",
+    "subjectPlaceholder": "E.g: Job opportunity / Project inquiry",
+    "message": "Message",
+    "messagePlaceholder": "Tell me how I can help...",
+    "submit": "Send message",
+    "submitting": "Sending...",
+    "successTitle": "Message sent!",
+    "successBody": "Thanks for reaching out. You'll receive a confirmation email and I'll reply as soon as possible.",
+    "errorTitle": "Something went wrong",
+    "errorBody": "I couldn't send your message. Please try again in a few minutes or email me directly.",
+    "sendAnother": "Send another message",
+    "directEmail": "You can also email me directly at",
+    "validation": {
+      "nameRequired": "Please enter your name",
+      "emailInvalid": "Please enter a valid email",
+      "subjectRequired": "Please enter a subject",
+      "messageRequired": "Please write a message",
+      "messageMin": "Message must be at least 10 characters"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with React, TypeScript, Tailwind and NestJS."
+  }
+}
