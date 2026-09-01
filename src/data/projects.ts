@@ -56,4 +56,18 @@ export const projects: Project[] = [
     repoUrl: undefined,
     featured: true,
   },
+  {
+    id: "airbnb-guest-guide",
+    title: "Valencia Airbnb — Guía del huésped",
+    description: {
+      es: "Mini-sitio mobile-first para los huéspedes de mis habitaciones en alquiler en Valencia: cómo llegar, normas de la casa, WiFi con QR de conexión automática, las publicaciones de Airbnb, atractivos turísticos + transporte, y un formulario de recomendaciones. Contenido en inglés, español y ruso.",
+      en: "Mobile-first guest guide for my rented rooms in Valencia (Airbnb): how to get there, house rules, WiFi with auto-connect QR, the Airbnb listings, local attractions + transport, and a recommendations form. Content in English, Spanish, and Russian.",
+    },
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "i18next", "NestJS"],
+    category: "react",
+    liveUrl: "https://airbnb.marianomaciasgandulfo.com",
+    repoUrl: "https://github.com/soldiersnake/airbnb_personal",
+    blocksEmbedding: false,
+    featured: true,
+  },
 ];
