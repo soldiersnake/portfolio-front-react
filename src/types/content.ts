@@ -19,6 +19,8 @@ export interface ExperienceEntry {
   bullets: LocalizedText[];
 }
 
+export type ProjectCategory = "react" | "html-css" | "client";
+
 /**
  * Project cards are designed to be easy to extend: to add a new project,
  * just push a new object into `projects` in `src/data/projects.ts`.
@@ -29,7 +31,12 @@ export interface Project {
   title: string;
   description: LocalizedText;
   tech: string[];
-  category: "react" | "html-css" | "client";
+  /**
+   * One or more categories, e.g. ["html-css", "react"] for a project that
+   * started as plain HTML/CSS and was later migrated to React — it'll show
+   * up under both filter pills. Most projects only need one.
+   */
+  category: ProjectCategory[];
   liveUrl?: string;
   repoUrl?: string;
   /**

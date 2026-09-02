@@ -3,9 +3,9 @@ import { useTranslation } from "react-i18next";
 import SectionHeading from "./SectionHeading";
 import ProjectCard from "./ProjectCard";
 import { projects } from "../data/projects";
-import type { Project } from "../types/content";
+import type { ProjectCategory } from "../types/content";
 
-type Category = Project["category"] | "all";
+type Category = ProjectCategory | "all";
 
 const categories: Category[] = ["all", "react", "html-css", "client"];
 
@@ -14,7 +14,7 @@ export default function Projects() {
   const [active, setActive] = useState<Category>("all");
 
   const filtered = useMemo(
-    () => (active === "all" ? projects : projects.filter((p) => p.category === active)),
+    () => (active === "all" ? projects : projects.filter((p) => p.category.includes(active))),
     [active],
   );
 
