@@ -60,6 +60,20 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "techpro-audio",
+    title: "TechPRO Audio",
+    description: {
+      es: "Landing de producto para una línea de audífonos (TechPRO X/Y/Z) con ficha de detalle por modelo en un modal (specs, colores, precio) y un formulario de newsletter funcional: el email queda guardado en MongoDB y dispara un correo de bienvenida vía Resend, a través de un backend en NestJS. Migrado desde un sitio original en HTML/CSS puro, conservando la interacción de hover de las tarjetas y con todo el copy reemplazado por contenido propio.",
+      en: "Product landing page for a headphones line (TechPRO X/Y/Z) with a per-model detail modal (specs, colors, price) and a working newsletter form: the email is stored in MongoDB and triggers a welcome email via Resend through a NestJS backend. Migrated from a plain HTML/CSS site, preserving the original card hover interaction and with all copy replaced by original content.",
+    },
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB", "Resend"],
+    category: ["react", "html-css"],
+    liveUrl: "https://audifonos.marianomaciasgandulfo.com/",
+    // repoUrl: "https://github.com/soldiersnake/",
+    blocksEmbedding: false,
+    featured: true,
+  },
+  {
     id: "cash-wise-app",
     title: "Cash Wise App",
     description: {
@@ -68,7 +82,6 @@ export const projects: Project[] = [
       },
     tech: ["React", "OpenAI API", "PHP"],
     category: ["react"],
-    // TODO(Mariano): add the live URL once it's deployed/redeployed.
     liveUrl: "https://cashwiseapp.netlify.app",
     repoUrl: "https://github.com/soldiersnake/cash-wise-app",
     featured: true,
@@ -82,7 +95,6 @@ export const projects: Project[] = [
     },
     tech: ["React", "TypeScript", "Generative AI APIs"],
     category: ["react"],
-    // TODO(Mariano): add the live URL once it's deployed/redeployed.
     liveUrl: "https://marianoreactgpt.netlify.app",
     repoUrl: "https://github.com/soldiersnake/ReactGPT",
     featured: true,
