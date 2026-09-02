@@ -8,7 +8,7 @@ export default function Experience() {
   const locale = useLocale();
 
   return (
-    <section id="experience" className="section-fade-in bg-white/[0.02] py-24">
+    <section id="experience" className="section-fade-in bg-white/2 py-24">
       <div className="mx-auto max-w-4xl px-6">
         <SectionHeading title={t("experience.title")} subtitle={t("experience.subtitle")} />
 

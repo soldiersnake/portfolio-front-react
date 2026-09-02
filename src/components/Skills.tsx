@@ -8,7 +8,7 @@ export default function Skills() {
   const locale = useLocale();
 
   return (
-    <section id="skills" className="section-fade-in bg-white/[0.02] py-24">
+    <section id="skills" className="section-fade-in bg-white/2 py-24">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading title={t("skills.title")} subtitle={t("skills.subtitle")} />
 
@@ -16,7 +16,7 @@ export default function Skills() {
           {skillGroups.map((group) => (
             <div
               key={group.label.en}
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition hover:border-accent/40"
+              className="rounded-2xl border border-white/10 bg-white/3 p-6 transition hover:border-accent/40"
             >
               <h3 className="text-sm font-semibold uppercase tracking-wide text-accent">
                 {group.label[locale]}

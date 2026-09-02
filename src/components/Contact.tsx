@@ -218,7 +218,7 @@ function Field({
 }
 
 function inputClass(hasError: boolean) {
-  return `w-full rounded-xl border bg-white/[0.03] px-4 py-2.5 text-sm text-white placeholder:text-slate-500 outline-none transition focus:border-accent/60 ${
+  return `w-full rounded-xl border bg-white/3 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 outline-none transition focus:border-accent/60 ${
     hasError ? "border-red-400/50" : "border-white/15"
   }`;
 }

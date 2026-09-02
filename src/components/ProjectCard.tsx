@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   }
 
   return (
-    <div className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] transition hover:border-accent/40">
+    <div className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/3 transition hover:border-accent/40">
       <div className="relative aspect-video w-full overflow-hidden border-b border-white/10 bg-slate-900">
         {!hasLiveUrl && (
           <div className="flex h-full w-full flex-col items-center justify-center gap-2 px-6 text-center text-slate-500">

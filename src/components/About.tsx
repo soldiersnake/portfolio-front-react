@@ -36,7 +36,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-8">
+          <div className="rounded-2xl border border-white/10 bg-white/3 p-8">
             <h3 className="text-sm font-semibold uppercase tracking-wide text-accent">
               {t("about.highlightsTitle")}
             </h3>
