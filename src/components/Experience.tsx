@@ -15,7 +15,7 @@ export default function Experience() {
         <ol className="relative border-s border-white/10 pl-8">
           {experience.map((entry, index) => (
             <li key={`${entry.company}-${index}`} className="mb-12 last:mb-0">
-              <span className="absolute -start-[7px] mt-1.5 h-3.5 w-3.5 rounded-full border-2 border-slate-950 bg-accent" />
+              <span className="absolute -inset-1.75 mt-1.5 h-3.5 w-3.5 rounded-full border-2 border-slate-950 bg-accent" />
 
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="text-lg font-semibold text-white">{entry.title[locale]}</h3>
