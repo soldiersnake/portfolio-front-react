@@ -66,7 +66,7 @@ export const projects: Project[] = [
       es: "Sitio para un estudio de arquitectura especializado en casas de madera integradas al bosque. Incluye ficha de detalle por modelo con formulario de consulta, un simulador de presupuesto por metros cuadrados, testimonios y preguntas frecuentes, y un formulario de contacto que envía emails con diseño propio vía Resend. Migrado desde un sitio original en HTML/CSS puro.",
       en: "Site for an architecture studio specializing in forest-integrated wooden houses. Includes a per-model detail page with a consultation form, a budget simulator based on square meters, testimonials and FAQ, and a contact form that sends custom-styled emails via Resend. Migrated from a plain HTML/CSS site.",
     },
-    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB", "Resend"],
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB",  "i18next", "Resend"],
     category: ["react", "html-css"],
     liveUrl: "https://arquitectura.marianomaciasgandulfo.com/",
     // repoUrl no incluido: repos privados (proyectos pensados como muestra para posibles clientes)
