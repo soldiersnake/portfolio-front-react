@@ -46,6 +46,34 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "tienda-mueble",
+    title: "Tienda Muebles",
+    description: {
+      es: "Tienda de muebles con catálogo por categorías, carrito persistido en el navegador y checkout real: login con Google obligatorio para comprar, pago con tarjeta o Bizum vía Stripe, o con Mercado Pago (pensado para clientes de Latinoamérica) — el pedido se guarda en MongoDB con la provincia derivada automáticamente del código postal. Tras el pago se envían emails de confirmación (cliente y dueño) vía Resend, y la página de vuelta muestra el resumen real del pedido. Incluye panel de administración (alta/edición/baja de productos con subida de imágenes a ImageKit) restringido a mi email vía JWT. Migrado desde un sitio original en HTML/CSS puro.",
+      en: "Furniture store with a category-based catalog, a cart persisted in the browser, and a real checkout flow: Google login required to purchase, card or Bizum payment via Stripe, or Mercado Pago (aimed at Latin American customers) — orders are saved to MongoDB with the province auto-derived from the postal code. After payment, confirmation emails (customer and owner) are sent via Resend, and the return page shows the actual order summary. Includes an admin panel (create/edit/delete products with image uploads to ImageKit) restricted to my email via JWT. Migrated from a plain HTML/CSS site.",
+    },
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB", "Stripe", "Mercado Pago", "Google OAuth", "Resend", "ImageKit"],
+    category: ["react", "html-css"],
+    liveUrl: "https://tiendamueble.marianomaciasgandulfo.com/",
+    // repoUrl: "https://github.com/soldiersnake/TiendaMueble", // agregar si publicás el repo (hoy no tiene remoto configurado)
+    blocksEmbedding: false,
+    featured: true,
+  },
+  {
+    id: "arquitectura-bosque",
+    title: "ArquitecturaBosque",
+    description: {
+      es: "Sitio para un estudio de arquitectura especializado en casas de madera integradas al bosque. Incluye ficha de detalle por modelo con formulario de consulta, un simulador de presupuesto por metros cuadrados, testimonios y preguntas frecuentes, y un formulario de contacto que envía emails con diseño propio vía Resend. Migrado desde un sitio original en HTML/CSS puro.",
+      en: "Site for an architecture studio specializing in forest-integrated wooden houses. Includes a per-model detail page with a consultation form, a budget simulator based on square meters, testimonials and FAQ, and a contact form that sends custom-styled emails via Resend. Migrated from a plain HTML/CSS site.",
+    },
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB", "Resend"],
+    category: ["react", "html-css"],
+    liveUrl: "https://arquitectura.marianomaciasgandulfo.com/",
+    // repoUrl no incluido: repos privados (proyectos pensados como muestra para posibles clientes)
+    blocksEmbedding: false,
+    featured: true,
+  },
+  {
     id: "guitar-shop",
     title: "Guitar Shop",
     description: {
@@ -70,20 +98,6 @@ export const projects: Project[] = [
     category: ["react", "html-css"],
     liveUrl: "https://audifonos.marianomaciasgandulfo.com/",
     // repoUrl: "https://github.com/soldiersnake/",
-    blocksEmbedding: false,
-    featured: true,
-  },
-  {
-    id: "tienda-mueble",
-    title: "Tienda Muebles",
-    description: {
-      es: "Tienda de muebles con catálogo por categorías, carrito persistido en el navegador y checkout real: login con Google obligatorio para comprar, pago con tarjeta o Bizum a través de Stripe (checkout hospedado), y el pedido se guarda en MongoDB con la provincia derivada automáticamente del código postal. Tras el pago se envían emails de confirmación (cliente y dueño) vía Resend, y la página de vuelta muestra el resumen real del pedido. Incluye panel de administración (alta/edición/baja de productos con subida de imágenes a ImageKit) restringido a mi email vía JWT. Migrado desde un sitio original en HTML/CSS puro.",
-      en: "Furniture store with a category-based catalog, a cart persisted in the browser, and a real checkout flow: Google login required to purchase, card or Bizum payment via Stripe (hosted checkout), and orders saved to MongoDB with the province auto-derived from the postal code. After payment, confirmation emails (customer and owner) are sent via Resend, and the return page shows the actual order summary. Includes an admin panel (create/edit/delete products with image uploads to ImageKit) restricted to my email via JWT. Migrated from a plain HTML/CSS site.",
-    },
-    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB", "Stripe", "Google OAuth", "Resend", "ImageKit"],
-    category: ["react", "html-css"],
-    liveUrl: "https://tiendamueble.marianomaciasgandulfo.com/",
-    // repoUrl: "https://github.com/soldiersnake/TiendaMueble", // agregar si publicás el repo (hoy no tiene remoto configurado)
     blocksEmbedding: false,
     featured: true,
   },
