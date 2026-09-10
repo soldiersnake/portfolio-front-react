@@ -74,6 +74,20 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "gymbro",
+    title: "GymBro",
+    description: {
+      es: "PWA de gestión de gimnasio con app de socio y panel de administración, sobre el mismo backend en NestJS que comparto con mis otros proyectos. El socio se registra, inicia sesión con Google o accede por invitación, ve su carnet con código QR generado en el cliente, reserva clases (vista de lista o calendario, con lista de espera), paga la membresía con Stripe o Mercado Pago, recibe notificaciones push de anuncios y lleva un seguimiento de su peso. El panel de administración gestiona sedes, clases, planes, pagos, anuncios, altas de socios y control de acceso por QR. Interfaz del socio disponible en español, inglés y ruso.",
+      en: "Gym management PWA with a member app and an admin panel, built on the same NestJS backend I share across my other projects. Members sign up, sign in with Google, or get in via invite, see a client-generated QR membership card, book classes (list or calendar view, with waitlists), pay for their membership via Stripe or Mercado Pago, get push notifications for announcements, and track their weight over time. The admin panel manages locations, classes, plans, payments, announcements, member onboarding, and QR-based access control. Member interface available in Spanish, English, and Russian.",
+    },
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB", "Stripe", "Mercado Pago", "Google OAuth", "i18next", "PWA"],
+    category: ["react"],
+    liveUrl: "https://gymbro.marianomaciasgandulfo.com",
+    // repoUrl: "https://github.com/soldiersnake/gymbro",
+    blocksEmbedding: false,
+    featured: true,
+  },
+  {
     id: "guitar-shop",
     title: "Guitar Shop",
     description: {
@@ -98,20 +112,6 @@ export const projects: Project[] = [
     category: ["react", "html-css"],
     liveUrl: "https://audifonos.marianomaciasgandulfo.com/",
     // repoUrl: "https://github.com/soldiersnake/",
-    blocksEmbedding: false,
-    featured: true,
-  },
-  {
-    id: "gymbro",
-    title: "GymBro",
-    description: {
-      es: "PWA de gestión de gimnasio con app de socio y panel de administración, sobre el mismo backend en NestJS que comparto con mis otros proyectos. El socio se registra, inicia sesión con Google o accede por invitación, ve su carnet con código QR generado en el cliente, reserva clases (vista de lista o calendario, con lista de espera), paga la membresía con Stripe o Mercado Pago, recibe notificaciones push de anuncios y lleva un seguimiento de su peso. El panel de administración gestiona sedes, clases, planes, pagos, anuncios, altas de socios y control de acceso por QR. Interfaz del socio disponible en español, inglés y ruso.",
-      en: "Gym management PWA with a member app and an admin panel, built on the same NestJS backend I share across my other projects. Members sign up, sign in with Google, or get in via invite, see a client-generated QR membership card, book classes (list or calendar view, with waitlists), pay for their membership via Stripe or Mercado Pago, get push notifications for announcements, and track their weight over time. The admin panel manages locations, classes, plans, payments, announcements, member onboarding, and QR-based access control. Member interface available in Spanish, English, and Russian.",
-    },
-    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB", "Stripe", "Mercado Pago", "Google OAuth", "i18next", "PWA"],
-    category: ["react"],
-    liveUrl: "https://gymbro.marianomaciasgandulfo.com",
-    // repoUrl: "https://github.com/soldiersnake/gymbro",
     blocksEmbedding: false,
     featured: true,
   },
