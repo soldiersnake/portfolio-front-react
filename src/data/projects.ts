@@ -116,6 +116,20 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "invitacion-boda",
+    title: "Invitación de Boda",
+    description: {
+      es: "Plantilla de invitación digital para bodas en una sola página, sin build ni dependencias: HTML, Tailwind CSS vía CDN y un poco de JavaScript vanilla. Todo el contenido (nombres, textos, fecha, lugar, fotos, canción y teléfono) vive en un único objeto de configuración, así que cada pedido nuevo se arma cambiando ese bloque. Incluye portada con foto, sección de cuándo y dónde con mapa de Google Maps embebido, galería, confirmación de asistencia por WhatsApp con mensaje prearmado y reproductor flotante para el vals de fondo. Diseño mobile-first.",
+      en: "Single-page digital wedding invitation template with no build step or dependencies: HTML, Tailwind CSS via CDN, and a bit of vanilla JavaScript. All content (names, copy, date, venue, photos, song, and phone number) lives in a single config object, so each new order is set up by editing that one block. Includes a photo cover, a when-and-where section with an embedded Google Maps view, a gallery, RSVP via WhatsApp with a prefilled message, and a floating player for the background waltz. Mobile-first design.",
+    },
+    tech: ["HTML5", "Tailwind CSS", "JavaScript", "Google Maps Embed", "WhatsApp"],
+    category: ["html-css"],
+    liveUrl: "https://invitaciones.marianomaciasgandulfo.com",
+    repoUrl: "https://github.com/soldiersnake/invitacion",
+    blocksEmbedding: false,
+    featured: true,
+  },
+  {
     id: "cash-wise-app",
     title: "Cash Wise App",
     description: {
