@@ -11,14 +11,14 @@
     "greeting": "Hi, I'm",
     "name": "Mariano Macías",
     "role": "Full Stack Developer — React, TypeScript, Node.js & NestJS",
-    "tagline": "I build reliable interfaces and scalable APIs for banking, insurance, and startups. Currently developing the Vetland CMS for the insurtech sector.",
+    "tagline": "I build reliable interfaces and scalable APIs for banking, insurance, and startups. Currently building GymBro, a multi-tenant SaaS for gyms.",
     "ctaPrimary": "View projects",
     "ctaSecondary": "Get in touch",
-    "available": "Open to new remote opportunities"
+    "available": "Open to remote roles worldwide · hybrid in Valencia"
   },
   "about": {
     "title": "About me",
-    "paragraph1": "I'm a Full Stack Developer specialized in the JavaScript/TypeScript ecosystem (React, Node.js, Express, NestJS), with a formal university technical education in Systems. I live in Valencia, Spain, and work remotely for clients in digital banking, insurance, and insurtech.",
+    "paragraph1": "I'm a Full Stack Developer specialized in the JavaScript/TypeScript ecosystem (React, Node.js, Express, NestJS), with a university technical degree in Programming (UTN). I live in Valencia, Spain, and work remotely for clients in digital banking (OpenBank – Santander Group), insurance, and insurtech. I work AI-native: agentic development with Claude Code and Cursor, connected via MCP to GitHub, databases, and cloud platforms.",
     "paragraph2": "Besides coding, I teach: for 3+ years I've been training developers in the MERN stack, mentoring 500+ students. Outside of code, I'm a passionate musician — something that shows in how I approach teamwork: listening, finding the project's rhythm, and delivering my part with precision.",
     "highlightsTitle": "A few numbers",
     "highlights": {

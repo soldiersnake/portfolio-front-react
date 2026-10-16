@@ -14,8 +14,8 @@ export const profile = {
   linkedinLabel: "linkedin.com/in/marianomacias",
   githubUrl: "https://github.com/soldiersnake",
   githubLabel: "github.com/soldiersnake",
-  cvUrlEs: "/cv/CV_Mariano_Macias_Harvard_MERN_NestJS_ES_ATS.pdf",
-  cvUrlEn: "/cv/CV_Mariano_Macias_Harvard_MERN_NestJS_EN_ATS.pdf",
+  cvUrlEs: "/cv/ES_Mariano_Macias_CV_FullStack.pdf",
+  cvUrlEn: "/cv/EN_Mariano_Macias_CV_FullStack.pdf",
 };
 
 // Only counts projects actually deployed (liveUrl set) — matches the

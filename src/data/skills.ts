@@ -1,5 +1,6 @@
 import type { SkillGroup } from "../types/content";
 
+/** Kept in sync with the Technical Skills section of the CV. */
 export const skillGroups: SkillGroup[] = [
   {
     label: { es: "Frontend & UI", en: "Frontend & UI" },
@@ -9,12 +10,13 @@ export const skillGroups: SkillGroup[] = [
       "JavaScript (ES6+)",
       "Vite",
       "TanStack Query",
+      "Redux",
       "Styled Components",
       "Material UI (MUI)",
       "Tailwind CSS",
       "Bootstrap",
-      "Redux",
       "Storybook",
+      "PWA",
       "HTML5 / CSS3",
     ],
   },
@@ -25,12 +27,14 @@ export const skillGroups: SkillGroup[] = [
       "NestJS",
       "Express.js",
       ".NET (C#)",
-      "MongoDB",
+      "MongoDB / Mongoose",
       "MySQL / PostgreSQL",
       "Sequelize ORM",
       "TypeORM / Prisma",
       "Firebase / Firestore",
       "RESTful APIs",
+      "Stripe / Mercado Pago",
+      "Web Push",
     ],
   },
   {
@@ -38,6 +42,7 @@ export const skillGroups: SkillGroup[] = [
     items: [
       "Jest",
       "React Testing Library",
+      "Vitest",
       "MSW (Mock Service Worker)",
       "Code Reviews",
       "Clean Code",
@@ -46,13 +51,15 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    label: { es: "Desarrollo Asistido por IA", en: "AI-Assisted Development" },
+    label: { es: "Desarrollo AI-Native", en: "AI-Native Development" },
     items: [
-      "OpenAI",
-      "Anthropic Claude",
-      "Google Gemini",
       "Claude Code",
       "Cursor",
+      "OpenCode",
+      "Model Context Protocol (MCP)",
+      "OpenAI API",
+      "Anthropic Claude API",
+      "Google Gemini",
       "Prompt Engineering",
     ],
   },
@@ -61,10 +68,15 @@ export const skillGroups: SkillGroup[] = [
     items: [
       "Git",
       "GitHub",
+      "GitHub Actions",
       "Azure DevOps",
-      "Firebase",
+      "Vercel",
+      "Render",
+      "MongoDB Atlas",
       "Confluence",
       "Postman",
+      "Fork",
+      "VS Code",
       "Scrum / Agile",
     ],
   },

@@ -32,6 +32,20 @@ import type { Project } from "../types/content";
  */
 export const projects: Project[] = [
   {
+    id: "gymbro",
+    title: "GymBro",
+    description: {
+      es: "SaaS multi-tenant de gestión para gimnasios de barrio. Landing comercial en gymbro.es (con formulario de alta que guarda el lead y avisa por email) y una app por gimnasio en su propio subdominio, servida desde un único frontend. Backend NestJS propio que identifica cada gimnasio por el subdominio y usa una base MongoDB por gimnasio, con JWT ligado al gimnasio para aislar los datos entre clientes, más un gimnasio demo que se reinicia cada semana. La PWA del socio incluye carnet con QR, reserva de clases con cupo y lista de espera automática, pago de la membresía con Stripe, notificaciones push y seguimiento de peso. El panel de administración gestiona sedes, clases, planes, pagos, anuncios, altas de socios y control de acceso por QR, con roles (superadmin / admin / recepción) y un dashboard de métricas. Interfaz en español, inglés y ruso. Próximo paso: Stripe Connect para que cada gimnasio cobre directamente en su cuenta, y un piloto con un primer gimnasio cliente.",
+      en: "Multi-tenant SaaS for managing neighborhood gyms. Commercial landing page at gymbro.es (with a sign-up form that stores the lead and sends an email alert) and one app per gym on its own subdomain, served from a single frontend. Dedicated NestJS backend that identifies each gym by subdomain and uses one MongoDB database per gym, with gym-scoped JWTs to keep client data isolated, plus a demo gym that resets weekly. The member PWA includes a QR membership card, class booking with capacity limits and an automatic waitlist, membership payments via Stripe, push notifications, and weight tracking. The admin panel manages locations, classes, plans, payments, announcements, member onboarding, and QR-based access control, with role-based access (superadmin / admin / reception) and a metrics dashboard. Interface in Spanish, English, and Russian. Next up: Stripe Connect so each gym gets paid directly into its own account, and a pilot with a first client gym.",
+    },
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "PWA", "NestJS", "MongoDB", "Multi-tenant", "Stripe", "Mercado Pago", "Web Push", "Google OAuth", "i18next"],
+    category: ["react"],
+    liveUrl: "https://gymbro.es/",
+    // repoUrl: "https://github.com/soldiersnake/gymbro",
+    blocksEmbedding: false,
+    featured: true,
+  },
+  {
     id: "airbnb-guest-guide",
     title: "Valencia Airbnb — Guía del huésped",
     description: {
@@ -70,20 +84,6 @@ export const projects: Project[] = [
     category: ["react", "html-css"],
     liveUrl: "https://arquitectura.marianomaciasgandulfo.com/",
     // repoUrl no incluido: repos privados (proyectos pensados como muestra para posibles clientes)
-    blocksEmbedding: false,
-    featured: true,
-  },
-  {
-    id: "gymbro",
-    title: "GymBro",
-    description: {
-      es: "PWA de gestión de gimnasio con app de socio y panel de administración, sobre el mismo backend en NestJS que comparto con mis otros proyectos. El socio se registra, inicia sesión con Google o accede por invitación, ve su carnet con código QR generado en el cliente, reserva clases (vista de lista o calendario, con lista de espera), paga la membresía con Stripe o Mercado Pago, recibe notificaciones push de anuncios y lleva un seguimiento de su peso. El panel de administración gestiona sedes, clases, planes, pagos, anuncios, altas de socios y control de acceso por QR. Interfaz del socio disponible en español, inglés y ruso.",
-      en: "Gym management PWA with a member app and an admin panel, built on the same NestJS backend I share across my other projects. Members sign up, sign in with Google, or get in via invite, see a client-generated QR membership card, book classes (list or calendar view, with waitlists), pay for their membership via Stripe or Mercado Pago, get push notifications for announcements, and track their weight over time. The admin panel manages locations, classes, plans, payments, announcements, member onboarding, and QR-based access control. Member interface available in Spanish, English, and Russian.",
-    },
-    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB", "Stripe", "Mercado Pago", "Google OAuth", "i18next", "PWA"],
-    category: ["react"],
-    liveUrl: "https://gymbro.marianomaciasgandulfo.com",
-    // repoUrl: "https://github.com/soldiersnake/gymbro",
     blocksEmbedding: false,
     featured: true,
   },
@@ -134,8 +134,8 @@ export const projects: Project[] = [
     title: "Cash Wise App",
     description: {
       es: "Asistente financiero con chat integrado — proyecto final universitario. Desarrollé íntegramente el frontend en React (UI, estilos, integración con la API de OpenAI para el asistente conversacional y despliegues). Proyecto en equipo; el backend en PHP estuvo a cargo de un compañero.",
-      en: "Financial assistant with integrated chat — university capstone project. I built the entire React frontend (UI, styling, OpenAI API integration for the conversational assistant, and deployments). Team project; the PHP backend"
-      },
+      en: "Financial assistant with integrated chat — university capstone project. I built the entire React frontend (UI, styling, OpenAI API integration for the conversational assistant, and deployments). Team project; the PHP backend was built by a teammate.",
+    },
     tech: ["React", "OpenAI API", "PHP"],
     category: ["react"],
     liveUrl: "https://cashwiseapp.netlify.app",
