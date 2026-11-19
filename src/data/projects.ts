@@ -48,6 +48,22 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "orfeo",
+    title: "Orfeo — Compañero IA 100 % local",
+    description: {
+      es: "Asistente y compañero con IA que corre entero en mi PC, sin APIs de pago ni nube. Monorepo pnpm en TypeScript: un \"cerebro\" en NestJS que habla con un LLM local vía Ollama y devuelve siempre una respuesta estructurada { texto, emoción } validada con zod, y una \"cara\" web en React 19 conectada por WebSocket con un protocolo compartido, pensado para que mañana se conecte también una placa ESP32. Tiene memoria a largo plazo con RAG (conversaciones en MongoDB y recuerdos con embeddings), un agente con tools (notas, ideas, recordar, buscar en su memoria y Gmail con human-in-the-loop: ningún correo sale sin que yo lo confirme) y voz bilingüe español/inglés con Whisper y Kokoro: pulsar para hablar o manos libres con palabra de activación \"Orfeo\". La personalidad vive en un archivo de datos y el proveedor de LLM es intercambiable. También hace de compañero para practicar inglés, corrigiendo mis errores con tacto. Próximas fases: cara animada según la emoción, coach vocal y cuerpo físico con ESP32.",
+      en: "AI assistant and companion that runs entirely on my PC, with no paid APIs or cloud. TypeScript pnpm monorepo: a NestJS \"brain\" that talks to a local LLM through Ollama and always returns a structured { text, emotion } reply validated with zod, plus a React 19 web \"face\" connected over WebSocket through a shared protocol, designed so an ESP32 board can plug in later. It has long-term memory with RAG (conversations in MongoDB and embedding-based memories), a tool-calling agent (notes, ideas, remember, memory search, and Gmail with human-in-the-loop: no email goes out without my confirmation), and bilingual Spanish/English voice with Whisper and Kokoro: push-to-talk or hands-free with an \"Orfeo\" wake word. The personality lives in a data file and the LLM provider is swappable. It also works as an English practice partner, gently correcting my mistakes. Next phases: an emotion-driven animated face, a vocal coach, and a physical ESP32 body.",
+    },
+    tech: ["TypeScript", "NestJS", "React 19", "Vite", "WebSocket", "Ollama", "Local LLM", "RAG", "Embeddings", "MongoDB", "AI Agents", "Tool calling", "Whisper", "Kokoro TTS", "zod", "Docker", "pnpm monorepo"],
+    category: ["react", "ai"],
+    // Corre en local (Ollama + GPU): la tarjeta abre el repo con una captura de la interfaz
+    liveUrl: "https://github.com/soldiersnake/Orfeo_IA",
+    repoUrl: "https://github.com/soldiersnake/Orfeo_IA",
+    blocksEmbedding: true,
+    thumbnail: "/projects/orfeo.png",
+    featured: true,
+  },
+  {
     id: "gymbro",
     title: "GymBro",
     description: {
