@@ -12,6 +12,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const locale = useLocale();
 
   const hasLiveUrl = Boolean(project.liveUrl);
+  // Proyecto sin deploy público (p. ej. herramienta local): la tarjeta abre el repo
+  const isRepoOnly = Boolean(project.repoUrl) && project.liveUrl === project.repoUrl;
 
   function openLive() {
     if (project.liveUrl) {
@@ -41,10 +43,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 className="absolute inset-0 h-full w-full object-cover opacity-40"
               />
             ) : null}
-            <span className="relative z-10 text-sm">{t("projects.previewUnavailable")}</span>
+            <span className="relative z-10 text-sm">{t(isRepoOnly ? "projects.repoOnly" : "projects.previewUnavailable")}</span>
             <span className="relative z-10 inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-xs font-semibold text-slate-950">
-              <FiExternalLink />
-              {t("projects.openSite")}
+              {isRepoOnly ? <FiGithub /> : <FiExternalLink />}
+              {t(isRepoOnly ? "projects.viewOnGithub" : "projects.openSite")}
             </span>
           </button>
         )}

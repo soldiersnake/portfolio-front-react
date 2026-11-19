@@ -41,6 +41,8 @@
     "viewLive": "View live site",
     "viewRepo": "View code",
     "previewUnavailable": "This site can't be embedded here for security reasons. Click to open it directly.",
+    "repoOnly": "Local tool, no online demo. Code and screenshots are on GitHub.",
+    "viewOnGithub": "View on GitHub",
     "openSite": "Open project",
     "categories": {
       "all": "All",

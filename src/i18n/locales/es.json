@@ -41,6 +41,8 @@
     "viewLive": "Ver sitio en vivo",
     "viewRepo": "Ver código",
     "previewUnavailable": "Este sitio no permite mostrarse dentro de otra página por motivos de seguridad. Hacé clic para verlo directamente.",
+    "repoOnly": "Herramienta local, sin demo online. El código y las capturas están en GitHub.",
+    "viewOnGithub": "Ver en GitHub",
     "openSite": "Abrir proyecto",
     "categories": {
       "all": "Todos",
