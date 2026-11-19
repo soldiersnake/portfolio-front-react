@@ -13,7 +13,7 @@ import type { Project } from "../types/content";
  * - title:          project name shown on the card
  * - description:    short blurb in both languages
  * - tech:           tech stack badges (array of strings)
- * - category:       array of one or more of "react" | "html-css" | "client",
+ * - category:       array of one or more of "react" | "html-css" | "python" | "ai" | "client",
  *                    e.g. ["react"] or ["html-css", "react"] for a project
  *                    migrated from plain HTML/CSS to React — it'll show up
  *                    under both filter pills. (Used for the filter pills in
@@ -31,6 +31,22 @@ import type { Project } from "../types/content";
  * ─────────────────────────────────────────────────────────────────────────
  */
 export const projects: Project[] = [
+  {
+    id: "commercial-assistant-agent",
+    title: "Commercial Assistant Agent",
+    description: {
+      es: "Agente de IA que gestiona el día a día de un asesor comercial (sector mantenimiento de ascensores), nacido como encargo para un cliente real y en uso diario. Se conecta a Gmail y Google Calendar a través de un servidor MCP propio en Python (FastMCP): lee el correo, clasifica cada entrante (técnico, facturación, comercial, etc.), redacta la respuesta como borrador en el hilo original y hace seguimiento de presupuestos, captaciones en 3 pasos y citas con aviso de solapamiento contra la agenda real. Decisión de diseño clave: el OAuth pide solo lectura + borradores, así que el sistema no puede enviar un correo aunque el modelo alucine; el asesor revisa y envía siempre. Incluye un panel de gestión local (HTML/JS vanilla servido por Python) con acciones reales, import/export de Excel con openpyxl, corridas programadas y un modo asistente conversacional. Runtime agéntico intercambiable (OpenCode, Gemini CLI u Ollama en local), pensado para funcionar sin coste de IA, y con todos los datos en local (JSON/Markdown) por privacidad.",
+      en: "AI agent that runs the day-to-day workload of a sales advisor (elevator maintenance sector), originally built for a real client and used daily in production. It connects to Gmail and Google Calendar through a custom Python MCP server (FastMCP): it reads the inbox, classifies every incoming email (technical, billing, sales, etc.), writes the reply as a draft in the original thread, and tracks quotes, 3-step prospecting sequences, and appointments with overlap checks against the real calendar. Key design decision: OAuth only requests read + compose scopes, so the system cannot send an email even if the model hallucinates; the advisor always reviews and sends. Includes a local management dashboard (vanilla HTML/JS served by Python) with real actions, Excel import/export via openpyxl, scheduled runs, and a conversational assistant mode. Swappable agent runtime (OpenCode, Gemini CLI, or local Ollama), designed to run at zero AI cost, with all data kept local (JSON/Markdown) for privacy.",
+    },
+    tech: ["Python", "AI Agents", "MCP (FastMCP)", "Gmail API", "Google Calendar API", "OAuth 2.0", "Gemini CLI", "OpenCode", "Ollama", "openpyxl", "pytest", "PowerShell"],
+    category: ["python", "ai", "client"],
+    // Herramienta local (no tiene deploy público): la tarjeta abre el repo con la captura del panel (datos ficticios)
+    liveUrl: "https://github.com/soldiersnake/commercial-assistant-agent",
+    repoUrl: "https://github.com/soldiersnake/commercial-assistant-agent",
+    blocksEmbedding: true,
+    thumbnail: "/projects/commercial-assistant-agent.png",
+    featured: true,
+  },
   {
     id: "gymbro",
     title: "GymBro",
@@ -137,7 +153,7 @@ export const projects: Project[] = [
       en: "Financial assistant with integrated chat — university capstone project. I built the entire React frontend (UI, styling, OpenAI API integration for the conversational assistant, and deployments). Team project; the PHP backend was built by a teammate.",
     },
     tech: ["React", "OpenAI API", "PHP"],
-    category: ["react"],
+    category: ["react", "ai"],
     liveUrl: "https://cashwiseapp.netlify.app",
     repoUrl: "https://github.com/soldiersnake/cash-wise-app",
     featured: true,
@@ -150,7 +166,7 @@ export const projects: Project[] = [
       en: "Modular dashboard in React/TypeScript consuming generative AI APIs for multi-purpose capabilities: contextual translation, image generation/editing, and tailored domain assistants.",
     },
     tech: ["React", "TypeScript", "Generative AI APIs"],
-    category: ["react"],
+    category: ["react", "ai"],
     liveUrl: "https://marianoreactgpt.netlify.app",
     repoUrl: "https://github.com/soldiersnake/ReactGPT",
     featured: true,

@@ -7,7 +7,7 @@ import type { ProjectCategory } from "../types/content";
 
 type Category = ProjectCategory | "all";
 
-const categories: Category[] = ["all", "react", "html-css", "client"];
+const categories: Category[] = ["all", "react", "html-css", "python", "ai", "client"];
 
 export default function Projects() {
   const { t } = useTranslation();
