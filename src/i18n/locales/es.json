@@ -10,7 +10,7 @@
   "hero": {
     "greeting": "Hola, soy",
     "name": "Mariano Macías",
-    "role": "Full Stack Developer — React, TypeScript, Python, Node.js & NestJS",
+    "role": "Full Stack Developer & AI Engineer — React, TypeScript, Python, Node.js, NestJS, Agentes IA, LLMs, RAG & MCP",
     "tagline": "Construyo interfaces sólidas y APIs escalables para banca, seguros y startups. Actualmente construyendo GymBro, un SaaS multi-tenant para gimnasios.",
     "ctaPrimary": "Ver proyectos",
     "ctaSecondary": "Contactarme",
