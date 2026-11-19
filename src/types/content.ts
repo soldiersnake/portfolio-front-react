@@ -19,7 +19,7 @@ export interface ExperienceEntry {
   bullets: LocalizedText[];
 }
 
-export type ProjectCategory = "react" | "html-css" | "python" | "ai" | "client";
+export type ProjectCategory = "react" | "html-css" | "nest" | "python" | "ai" | "games" | "client";
 
 /**
  * Project cards are designed to be easy to extend: to add a new project,

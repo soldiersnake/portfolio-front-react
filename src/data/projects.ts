@@ -13,7 +13,7 @@ import type { Project } from "../types/content";
  * - title:          project name shown on the card
  * - description:    short blurb in both languages
  * - tech:           tech stack badges (array of strings)
- * - category:       array of one or more of "react" | "html-css" | "python" | "ai" | "client",
+ * - category:       array of one or more of "react" | "html-css" | "nest" | "python" | "ai" | "games" | "client",
  *                    e.g. ["react"] or ["html-css", "react"] for a project
  *                    migrated from plain HTML/CSS to React — it'll show up
  *                    under both filter pills. (Used for the filter pills in
@@ -55,12 +55,27 @@ export const projects: Project[] = [
       en: "AI assistant and companion that runs entirely on my PC, with no paid APIs or cloud. TypeScript pnpm monorepo: a NestJS \"brain\" that talks to a local LLM through Ollama and always returns a structured { text, emotion } reply validated with zod, plus a React 19 web \"face\" connected over WebSocket through a shared protocol, designed so an ESP32 board can plug in later. It has long-term memory with RAG (conversations in MongoDB and embedding-based memories), a tool-calling agent (notes, ideas, remember, memory search, and Gmail with human-in-the-loop: no email goes out without my confirmation), and bilingual Spanish/English voice with Whisper and Kokoro: push-to-talk or hands-free with an \"Orfeo\" wake word. The personality lives in a data file and the LLM provider is swappable. It also works as an English practice partner, gently correcting my mistakes. Next phases: an emotion-driven animated face, a vocal coach, and a physical ESP32 body.",
     },
     tech: ["TypeScript", "NestJS", "React 19", "Vite", "WebSocket", "Ollama", "Local LLM", "RAG", "Embeddings", "MongoDB", "AI Agents", "Tool calling", "Whisper", "Kokoro TTS", "zod", "Docker", "pnpm monorepo"],
-    category: ["react", "ai"],
+    category: ["react", "ai", "nest"],
     // Corre en local (Ollama + GPU): la tarjeta abre el repo con una captura de la interfaz
     liveUrl: "https://github.com/soldiersnake/Orfeo_IA",
     repoUrl: "https://github.com/soldiersnake/Orfeo_IA",
     blocksEmbedding: true,
     thumbnail: "/projects/orfeo.png",
+    featured: true,
+  },
+  {
+    id: "juansito-chamba",
+    title: "Juansito Chamba",
+    description: {
+      es: "Beat 'em up 2.5D en pixel art ambientado en La Matanza y el Conurbano bonaerense: gore, satírico y costumbrista, inspirado en Golden Axe y Streets of Rage. Hecho con Phaser 3 + TypeScript sobre Vite, en un monorepo pnpm con un paquete de tipos compartidos entre cliente y servidor. Nivel por oleadas con la pantalla que se traba hasta limpiarla, jefe final (El Delegado) con ataques propios, súper armadura y modo furia, IA de enemigos con máquina de estados que rodea obstáculos, colisiones por profundidad en 2.5D, combos con remate, guardia, especiales y cuatro personajes seleccionables con stats distintos. Todo el audio está sintetizado con Web Audio (cumbia chiptune incluida), con opciones de sangre roja, verde o sin sangre, récord guardado en el navegador, controles táctiles y versión Android con Capacitor. El cooperativo online con Colyseus (servidor autoritativo) ya está preparado.",
+      en: "2.5D pixel-art beat 'em up set in La Matanza and the Buenos Aires suburbs: gory, satirical, and full of local color, inspired by Golden Axe and Streets of Rage. Built with Phaser 3 + TypeScript on Vite, in a pnpm monorepo with a types package shared between client and server. Wave-based level where the screen locks until it's cleared, a final boss (El Delegado) with his own attacks, super armor and a rage mode, enemy AI driven by a state machine that paths around obstacles, depth-based 2.5D collisions, combos with finishers, guarding, specials, and four selectable characters with different stats. All audio is synthesized with Web Audio (chiptune cumbia included), with red, green, or no-blood options, a high score saved in the browser, touch controls, and an Android build via Capacitor. Online co-op with Colyseus (authoritative server) is already scaffolded.",
+    },
+    tech: ["TypeScript", "Phaser 3", "Vite", "Pixel art", "Web Audio API", "Capacitor (Android)", "Colyseus", "Node.js", "pnpm monorepo"],
+    category: ["games"],
+    liveUrl: "https://juansito-chamba.vercel.app/",
+    // repoUrl no incluido: repo privado
+    blocksEmbedding: false,
+    thumbnail: "/projects/juansito-chamba.png",
     featured: true,
   },
   {
@@ -71,7 +86,7 @@ export const projects: Project[] = [
       en: "Multi-tenant SaaS for managing neighborhood gyms. Commercial landing page at gymbro.es (with a sign-up form that stores the lead and sends an email alert) and one app per gym on its own subdomain, served from a single frontend. Dedicated NestJS backend that identifies each gym by subdomain and uses one MongoDB database per gym, with gym-scoped JWTs to keep client data isolated, plus a demo gym that resets weekly. The member PWA includes a QR membership card, class booking with capacity limits and an automatic waitlist, membership payments via Stripe, push notifications, and weight tracking. The admin panel manages locations, classes, plans, payments, announcements, member onboarding, and QR-based access control, with role-based access (superadmin / admin / reception) and a metrics dashboard. Interface in Spanish, English, and Russian. Next up: Stripe Connect so each gym gets paid directly into its own account, and a pilot with a first client gym.",
     },
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "PWA", "NestJS", "MongoDB", "Multi-tenant", "Stripe", "Mercado Pago", "Web Push", "Google OAuth", "i18next"],
-    category: ["react"],
+    category: ["react", "nest"],
     liveUrl: "https://gymbro.es/",
     // repoUrl: "https://github.com/soldiersnake/gymbro",
     blocksEmbedding: false,
@@ -85,7 +100,7 @@ export const projects: Project[] = [
       en: "Mobile-first guest guide for my rented rooms in Valencia (Airbnb): how to get there, house rules, WiFi with auto-connect QR, the Airbnb listings, local attractions + transport, and a recommendations form. Content in English, Spanish, and Russian.",
     },
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "i18next", "NestJS"],
-    category: ["react"],
+    category: ["react", "nest"],
     liveUrl: "https://airbnb.marianomaciasgandulfo.com",
     repoUrl: "https://github.com/soldiersnake/airbnb_personal",
     blocksEmbedding: false,
@@ -99,7 +114,7 @@ export const projects: Project[] = [
       en: "Furniture store with a category-based catalog, a cart persisted in the browser, and a real checkout flow: Google login required to purchase, card or Bizum payment via Stripe, or Mercado Pago (aimed at Latin American customers) — orders are saved to MongoDB with the province auto-derived from the postal code. After payment, confirmation emails (customer and owner) are sent via Resend, and the return page shows the actual order summary. Includes an admin panel (create/edit/delete products with image uploads to ImageKit) restricted to my email via JWT. Migrated from a plain HTML/CSS site.",
     },
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB", "Stripe", "Mercado Pago", "Google OAuth", "Resend", "ImageKit"],
-    category: ["react", "html-css"],
+    category: ["react", "html-css", "nest"],
     liveUrl: "https://tiendamueble.marianomaciasgandulfo.com/",
     // repoUrl: "https://github.com/soldiersnake/TiendaMueble", // agregar si publicás el repo (hoy no tiene remoto configurado)
     blocksEmbedding: false,
@@ -113,7 +128,7 @@ export const projects: Project[] = [
       en: "Site for an architecture studio specializing in forest-integrated wooden houses. Includes a per-model detail page with a consultation form, a budget simulator based on square meters, testimonials and FAQ, and a contact form that sends custom-styled emails via Resend. Migrated from a plain HTML/CSS site.",
     },
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB",  "i18next", "Resend"],
-    category: ["react", "html-css"],
+    category: ["react", "html-css", "nest"],
     liveUrl: "https://arquitectura.marianomaciasgandulfo.com/",
     // repoUrl no incluido: repos privados (proyectos pensados como muestra para posibles clientes)
     blocksEmbedding: false,
@@ -127,7 +142,7 @@ export const projects: Project[] = [
       en: "Electric guitar shop with a catalog and detail pages (specs, colors, stock). The cart lives entirely in the browser (localStorage), and checkout creates a real order persisted in MongoDB via a NestJS backend. Original content and copy, no placeholder data.",
     },
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB"],
-    category: ["react", "html-css"],
+    category: ["react", "html-css", "nest"],
     liveUrl: "https://guitarshop.marianomaciasgandulfo.com/",
     // repoUrl: "https://github.com/soldiersnake/GuitarTypercript",
     blocksEmbedding: false,
@@ -141,7 +156,7 @@ export const projects: Project[] = [
       en: "Product landing page for a headphones line (TechPRO X/Y/Z) with a per-model detail modal (specs, colors, price) and a working newsletter form: the email is stored in MongoDB and triggers a welcome email via Resend through a NestJS backend. Migrated from a plain HTML/CSS site, preserving the original card hover interaction and with all copy replaced by original content.",
     },
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "MongoDB", "Resend"],
-    category: ["react", "html-css"],
+    category: ["react", "html-css", "nest"],
     liveUrl: "https://audifonos.marianomaciasgandulfo.com/",
     // repoUrl: "https://github.com/soldiersnake/",
     blocksEmbedding: false,

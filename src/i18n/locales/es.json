@@ -48,8 +48,10 @@
       "all": "Todos",
       "react": "React",
       "html-css": "HTML / CSS",
+      "nest": "NestJS",
       "python": "Python",
       "ai": "IA / Agentes",
+      "games": "Juegos",
       "client": "Trabajo para cliente"
     },
     "comingSoon": "Más proyectos próximamente — esta sección se sigue ampliando."
