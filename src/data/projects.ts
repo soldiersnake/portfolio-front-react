@@ -64,6 +64,22 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "repertorio-vocal",
+    title: "Repertorio Vocal — App hecha por un equipo de agentes",
+    description: {
+      es: "App para cantantes líricos: gestionan su repertorio de arias, canciones y roles, el estado de estudio de cada pieza (por aprender, en estudio, lista para escenario), su tesitura dibujada sobre una pauta de C2 a C6 y un registro de ensayos con minutos por mes. Lo interesante es cómo se construyó: un equipo de tres agentes de Claude Code. Un orquestador (CLAUDE.md) divide el trabajo en tareas, un agente Develop programa siguiendo su guía de código y un agente Testing revisa cada entrega contra un contrato de DIRECTRICES con reglas numeradas (seguridad de Server Actions, RLS, accesibilidad, estados vacío/error/carga, diseño) y devuelve los fallos hasta que todo pasa; el historial de rechazos y correcciones queda registrado en el repo. El diseño sigue la skill Impeccable, cuyo detector de antipatrones forma parte de la revisión. Next.js 15 con App Router y Server Actions validadas con zod, Supabase (Auth + Postgres con Row Level Security por usuario), 146 tests con Vitest y Testing Library, desplegada en Vercel.",
+      en: "App for classical singers: they manage their repertoire of arias, songs and roles, each piece's study status (to learn, in progress, stage-ready), its vocal range drawn on a C2–C6 staff, and a rehearsal log with minutes per month. The interesting part is how it was built: a team of three Claude Code agents. An orchestrator (CLAUDE.md) splits the work into tasks, a Develop agent writes the code following its own coding guide, and a Testing agent reviews every delivery against a GUIDELINES contract of numbered rules (Server Action security, RLS, accessibility, empty/error/loading states, design) and sends back the failures until everything passes; the history of rejections and fixes is logged in the repo. The design follows the Impeccable skill, whose anti-pattern detector is part of the review. Next.js 15 with the App Router and zod-validated Server Actions, Supabase (Auth + Postgres with per-user Row Level Security), 146 tests with Vitest and Testing Library, deployed on Vercel.",
+    },
+    tech: ["Next.js 15", "TypeScript", "React 19", "Server Actions", "Tailwind CSS v4", "Supabase", "PostgreSQL", "Row Level Security", "zod", "Vitest", "Testing Library", "Claude Code", "AI Agents", "Multi-agent", "Vercel"],
+    category: ["react", "ai"],
+    liveUrl: "https://repertorio-vocal.vercel.app",
+    repoUrl: "https://github.com/soldiersnake/repertorio-vocal",
+    // Login con cookies de sesión: dentro de un iframe de otro dominio no se mantiene la sesión
+    blocksEmbedding: true,
+    thumbnail: "/projects/repertorio-vocal.png",
+    featured: true,
+  },
+  {
     id: "juansito-chamba",
     title: "Juansito Chamba",
     description: {
