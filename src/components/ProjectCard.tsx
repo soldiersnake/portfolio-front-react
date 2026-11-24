@@ -43,7 +43,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 className="absolute inset-0 h-full w-full object-cover opacity-40"
               />
             ) : null}
-            <span className="relative z-10 text-sm">{t(isRepoOnly ? "projects.repoOnly" : "projects.previewUnavailable")}</span>
+            <span className="relative z-10 text-sm">{project.previewNote?.[locale] ?? t(isRepoOnly ? "projects.repoOnly" : "projects.previewUnavailable")}</span>
             <span className="relative z-10 inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-xs font-semibold text-slate-950">
               {isRepoOnly ? <FiGithub /> : <FiExternalLink />}
               {t(isRepoOnly ? "projects.viewOnGithub" : "projects.openSite")}

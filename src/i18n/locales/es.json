@@ -40,7 +40,7 @@
     "subtitle": "Una selección de proyectos propios y de clientes. Hacé clic en cualquiera para abrirlo en una pestaña nueva.",
     "viewLive": "Ver sitio en vivo",
     "viewRepo": "Ver código",
-    "previewUnavailable": "Este sitio no permite mostrarse dentro de otra página por motivos de seguridad. Hacé clic para verlo directamente.",
+    "previewUnavailable": "Este proyecto se ve mejor en su propia pestaña. Hacé clic para abrirlo.",
     "repoOnly": "Herramienta local, sin demo online. El código y las capturas están en GitHub.",
     "viewOnGithub": "Ver en GitHub",
     "openSite": "Abrir proyecto",

@@ -76,6 +76,10 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/soldiersnake/repertorio-vocal",
     // Login con cookies de sesión: dentro de un iframe de otro dominio no se mantiene la sesión
     blocksEmbedding: true,
+    previewNote: {
+      es: "Esta app tiene inicio de sesión, así que se abre en su propia pestaña.",
+      en: "This app has a sign-in, so it opens in its own tab.",
+    },
     thumbnail: "/projects/repertorio-vocal.png",
     featured: true,
   },

@@ -47,6 +47,12 @@ export interface Project {
    * of trying (and silently failing) to render an <iframe>.
    */
   blocksEmbedding?: boolean;
+  /**
+   * Optional message shown over the thumbnail when `blocksEmbedding` is true,
+   * instead of the generic one. Use it to explain *why* in plain words
+   * (e.g. "this app needs you to sign in"), never a scary "security" wording.
+   */
+  previewNote?: LocalizedText;
   thumbnail?: string;
   featured?: boolean;
 }

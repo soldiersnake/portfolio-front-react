@@ -40,7 +40,7 @@
     "subtitle": "A selection of personal and client projects. Click any card to open it in a new tab.",
     "viewLive": "View live site",
     "viewRepo": "View code",
-    "previewUnavailable": "This site can't be embedded here for security reasons. Click to open it directly.",
+    "previewUnavailable": "This project works best in its own tab. Click to open it.",
     "repoOnly": "Local tool, no online demo. Code and screenshots are on GitHub.",
     "viewOnGithub": "View on GitHub",
     "openSite": "Open project",
